@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Anton', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 10px black;
+    background: #b92b27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    #game {
+        position: relative;
+    }
+    a {
+        img {
+            height: 80px;
+            padding: 20px;
+        }
+    }
+    #action {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            span {
+                font-size: 25px;
+                transform: translateY(-40px);
+                opacity: 0;
+            
+        }
+        img {
+            filter: brightness(150%);
+            position: relative;
+            width: 100px;
+            margin: 40px;
+            
+        }
+        }
+        
+    }
+    #resultat { 
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 30px;
+        
+
+        #moi {
+            display: flex;
+            #myPoke {
+                height: 200px;
+                width: 200px;
+                
+            }
+            img {
+                height: 200px;
+                margin-top: 50px;
+            }
+
+        } 
+        #ia{
+            display: flex;
+            #IAPoke {
+                height: 200px;
+                width: 200px;
+            }
+            img{
+                height: 200px;
+                margin-top: 50px; 
+            }
+        }
+        #parent{
+            p {
+                font-size: 50px;
+                margin: -10px 20px;
+            }
+            font-size: 40px;
+            margin: 5px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+#score {
+    h3 {
+        font-size: 40px;
+    }
+}
+#modale {
+    display: block;
+    position: absolute;
+    top: 0;
+    background: black;
+    width: 100%;
+  
+    .container-modale {
+      position: absolute;
+      top: 15%;
+      font-size: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+  
+      .titre {
+          display: flex; 
+          flex-direction: column;
+          align-items: center;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%);
+        
+      }
+      button {
+        font-family: 'Anton', sans-serif;
+        margin-top: 50px;
+        width: 200px;
+        height: 70px;
+        border-radius: 15%;
+        background-color: rgb(236, 169, 45);
+      }
+      h1 {
+          text-shadow: 2px 2px 15px rgb(122, 122, 122);
+        color: rgb(255, 255, 255);
+      }
+    }
+    video {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100vh;
+    }
+  }
+
+//   RESPONSIVE
+@media screen and (max-width: 320px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Anton', sans-serif;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 10px black;
+        background: #b92b27;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        text-align: center;
+        #game {
+            position: relative;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 50px;
+                width: 300px;
+            }
+        }
+        #action {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            div {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                span {
+                    font-size: 25px;
+                    transform: translateY(-40px);
+                    opacity: 0;
+                
+            }
+            img {
+                filter: brightness(150%);
+                position: relative;
+                width: 60px;
+                margin: 10px;
+                
+            }
+            }
+            
+        }
+        #resultat { 
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+            font-size: 15px;
+            
+    
+            #moi {
+                display: flex;
+                flex-direction: column-reverse;
+                #myPoke {
+                    height: 100px;
+                    width: 100px;
+                    margin-bottom: 50px;
+                    
+                }
+                img {
+                    height: 100px;
+                }
+    
+            } 
+            #ia{
+                display: flex;
+                flex-direction: column;
+                #IAPoke {
+                    height: 100px;
+                    width: 100px;
+                    margin-bottom: 50px;
+                }
+                img{
+                    height: 100px; 
+                }
+            }
+            #parent{
+                p {
+                    font-size: 20px;
+                    margin: -10px 20px;
+                }
+                font-size: 20px;
+                margin: 5px;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    
+    #score {
+        h3 {
+            font-size: 20px;
+        }
+    }
+    #modale {
+        display: block;
+        position: absolute;
+        top: 0;
+        background: rgb(255, 255, 255);
+        width: 100%;
+      
+        .container-modale {
+          position: absolute;
+          top: 15%;
+          font-size: 40px;
+          left: 50%;
+          transform: translateX(-50%);
+      
+          .titre {
+              display: flex; 
+              flex-direction: column;
+              align-items: center;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%);
+            
+          }
+          button {
+            font-family: 'Anton', sans-serif;
+            margin-top: 50px;
+            width: 200px;
+            height: 70px;
+            border-radius: 15%;
+            background-color: rgb(236, 169, 45);
+          }
+          h1 {
+              text-shadow: 2px 2px 15px rgb(122, 122, 122);
+            color: rgb(255, 255, 255);
+          }
+        }
+        video {
+            opacity: 0;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          height: 100vh;
+        }
+      }
+}

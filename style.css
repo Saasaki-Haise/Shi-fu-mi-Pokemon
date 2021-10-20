@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Anton', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  background: #b92b27;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#1565C0), to(#b92b27));
+  background: linear-gradient(to left, #1565C0, #b92b27);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+}
+
+body #game {
+  position: relative;
+}
+
+body a img {
+  height: 80px;
+  padding: 20px;
+}
+
+body #action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+
+body #action div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #action div span {
+  font-size: 25px;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  opacity: 0;
+}
+
+body #action div img {
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+  position: relative;
+  width: 100px;
+  margin: 40px;
+}
+
+body #resultat {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 30px;
+}
+
+body #resultat #moi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #resultat #moi #myPoke {
+  height: 200px;
+  width: 200px;
+}
+
+body #resultat #moi img {
+  height: 200px;
+  margin-top: 50px;
+}
+
+body #resultat #ia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #resultat #ia #IAPoke {
+  height: 200px;
+  width: 200px;
+}
+
+body #resultat #ia img {
+  height: 200px;
+  margin-top: 50px;
+}
+
+body #resultat #parent {
+  font-size: 40px;
+  margin: 5px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #resultat #parent p {
+  font-size: 50px;
+  margin: -10px 20px;
+}
+
+#score h3 {
+  font-size: 40px;
+}
+
+#modale {
+  display: block;
+  position: absolute;
+  top: 0;
+  background: black;
+  width: 100%;
+}
+
+#modale .container-modale {
+  position: absolute;
+  top: 15%;
+  font-size: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#modale .container-modale .titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+#modale .container-modale button {
+  font-family: 'Anton', sans-serif;
+  margin-top: 50px;
+  width: 200px;
+  height: 70px;
+  border-radius: 15%;
+  background-color: #eca92d;
+}
+
+#modale .container-modale h1 {
+  text-shadow: 2px 2px 15px #7a7a7a;
+  color: white;
+}
+
+#modale video {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+@media screen and (max-width: 320px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    background: #b92b27;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, right top, left top, from(#1565C0), to(#b92b27));
+    background: linear-gradient(to left, #1565C0, #b92b27);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+  }
+  body #game {
+    position: relative;
+  }
+  body a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body a img {
+    height: 50px;
+    width: 300px;
+  }
+  body #action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  body #action div {
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body #action div span {
+    font-size: 25px;
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+    opacity: 0;
+  }
+  body #action div img {
+    -webkit-filter: brightness(150%);
+            filter: brightness(150%);
+    position: relative;
+    width: 60px;
+    margin: 10px;
+  }
+  body #resultat {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 15px;
+  }
+  body #resultat #moi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body #resultat #moi #myPoke {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 50px;
+  }
+  body #resultat #moi img {
+    height: 100px;
+  }
+  body #resultat #ia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body #resultat #ia #IAPoke {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 50px;
+  }
+  body #resultat #ia img {
+    height: 100px;
+  }
+  body #resultat #parent {
+    font-size: 20px;
+    margin: 5px;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #resultat #parent p {
+    font-size: 20px;
+    margin: -10px 20px;
+  }
+  #score h3 {
+    font-size: 20px;
+  }
+  #modale {
+    display: block;
+    position: absolute;
+    top: 0;
+    background: white;
+    width: 100%;
+  }
+  #modale .container-modale {
+    position: absolute;
+    top: 15%;
+    font-size: 40px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #modale .container-modale .titre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  #modale .container-modale button {
+    font-family: 'Anton', sans-serif;
+    margin-top: 50px;
+    width: 200px;
+    height: 70px;
+    border-radius: 15%;
+    background-color: #eca92d;
+  }
+  #modale .container-modale h1 {
+    text-shadow: 2px 2px 15px #7a7a7a;
+    color: white;
+  }
+  #modale video {
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
