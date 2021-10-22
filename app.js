@@ -1,6 +1,7 @@
-var p = document.querySelector("#pierre");
-var f = document.querySelector("#feuille");
-var c = document.querySelector("#ciseaux");
+// VARIABLE DE SELECTION
+var pierre = document.querySelector("#pierre");
+var feuille = document.querySelector("#feuille");
+var ciseaux = document.querySelector("#ciseaux");
 var myPlayer = document.querySelector("#resultMoi")
 var IAPlayer = document.querySelector("#resultIA");
 var pokeMoi = document.querySelector("#myPoke");
@@ -10,7 +11,8 @@ console.log(pokeIA);
 
 //MODALEEE 
 var start = document.querySelector("#boutton");
-start.addEventListener("click", function() {
+
+start.addEventListener("click", () => {
   var modal = document.querySelector("#modale");
   modal.style.display= "none";
 });
@@ -30,29 +32,29 @@ IAPlayer.innerHTML="<img src = 'img/pierre.gif'>";
 myPlayer.innerHTML="<img src = 'img/sacha.gif'>";
 
 /// HOVERRRRRRRRRR
-p.addEventListener("mouseout" , function(){
-    p.setAttribute("src" , "img/pokebolee.png");
+pierre.addEventListener("mouseout" , function(){
+    pierre.setAttribute("src" , "img/pokebolee.png");
     span1.style.opacity = 0;
 })
-p.addEventListener("mouseover" , function(){
-    p.setAttribute("src" , "img/giphy2.gif");
+pierre.addEventListener("mouseover" , function(){
+    pierre.setAttribute("src" , "img/giphy2.gif");
     span1.style.opacity = 1;
 
 })
-f.addEventListener("mouseout" , function(){
-    f.setAttribute("src" , "img/pokebolee.png");
+feuille.addEventListener("mouseout" , function(){
+    feuille.setAttribute("src" , "img/pokebolee.png");
     span2.style.opacity = 0;
 })
-f.addEventListener("mouseover" , function(){
-    f.setAttribute("src" , "img/giphy2.gif");
+feuille.addEventListener("mouseover" , function(){
+    feuille.setAttribute("src" , "img/giphy2.gif");
     span2.style.opacity = 1;
 })
-c.addEventListener("mouseout" , function(){
-    c.setAttribute("src" , "img/pokebolee.png");
+ciseaux.addEventListener("mouseout" , function(){
+    ciseaux.setAttribute("src" , "img/pokebolee.png");
     span3.style.opacity = 0;
 })
-c.addEventListener("mouseover" , function(){
-    c.setAttribute("src" , "img/giphy2.gif");
+ciseaux.addEventListener("mouseover" , function(){
+    ciseaux.setAttribute("src" , "img/giphy2.gif");
     span3.style.opacity = 1;
 })
 
@@ -66,7 +68,7 @@ function ChoiseIA (){
 }
 
 // CHOIX UTILISATEUR
-p.addEventListener("click" ,function(){
+pierre.addEventListener("click" ,function(){
     ChoiseIA();
     if (iA == 0){
         pokeIA.innerHTML="<img src = 'img/onyx.png'>";
@@ -87,7 +89,7 @@ p.addEventListener("click" ,function(){
     }
     pokeMoi.innerHTML = "<img src='img/onyx.png'>";
 });
-f.addEventListener("click" ,function(){
+feuille.addEventListener("click" ,function(){
   
    ChoiseIA();
    if (iA == 0){
@@ -109,7 +111,7 @@ else {
 }
 pokeMoi.innerHTML="<img src = 'img/germi.png'>";
 });
-c.addEventListener("click" ,function(){
+ciseaux.addEventListener("click" ,function(){
    
     ChoiseIA();
     if (iA == 0){
